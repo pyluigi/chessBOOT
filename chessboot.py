@@ -51,7 +51,7 @@ class BOT(nn.Module):
 model = BOT().to(device)
 model = torch.compile(model,mode="max-autotune",dynamic=False)
 if os.path.exists("booty.pth"):
-    file = torch.load("booty.pth",map_location=device)
+    file = torch.load("booty.pth",map_location=device,weights_only=True)
     model.load_state_dict(file)
 model.train()
 optimizer = optim.Adam(model.parameters(),lr=1e-4)
