@@ -1,5 +1,5 @@
 # Transformer-based Chess Position Evaluator
-
+![Diagram](icon.png)
 ## 1. Overview
 
 This project is an experimental implementation of a neural network designed to evaluate chess positions. The model, `BOT`, leverages a simple Transformer-based architecture (specifically, a Multi-Head Attention layer) to process the board state and output a scalar value representing the positional advantage.
